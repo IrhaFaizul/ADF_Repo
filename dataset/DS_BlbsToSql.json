@@ -1,0 +1,32 @@
+{
+	"name": "DS_BlbsToSql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FilesToSQLdb",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SourceFile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().SourceFile",
+					"type": "Expression"
+				},
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

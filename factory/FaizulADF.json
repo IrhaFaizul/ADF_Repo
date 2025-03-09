@@ -1,0 +1,9 @@
+{
+	"name": "FaizulADF",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f29bf87e-0b3c-4031-aead-afd4e07f8ef5",
+		"tenantId": "21841a03-336c-4478-84d8-4e63611fba8e"
+	}
+}
