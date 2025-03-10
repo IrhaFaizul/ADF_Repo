@@ -1,0 +1,20 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "Session_22_Blob_to_SQL__load_for csv files"
+		},
+		"annotations": []
+	}
+}
